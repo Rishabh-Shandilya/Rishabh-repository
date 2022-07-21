@@ -1,4 +1,4 @@
-package com.Asssignment.ifSwitch;
+package com.Assignment.ifSwitch;
 
 import java.util.Scanner;
 
