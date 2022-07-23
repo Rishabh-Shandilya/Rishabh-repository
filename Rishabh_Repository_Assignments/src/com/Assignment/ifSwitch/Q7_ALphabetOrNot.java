@@ -12,8 +12,6 @@ public class Q7_ALphabetOrNot {
 			System.out.println(c+ " is an Alphabet");
 		}else {
 			System.out.println(c+" is not an alphabet");
-		}
-		
-		
+		}//end if-else
 	}//end main
 }//end class

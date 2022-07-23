@@ -2,7 +2,7 @@ package com.Assignment.basic;
 
 import java.util.Scanner;
 
-public class Q16_CompundInterest {
+public class Q17_CompundInterest {
 	public static void main(String[] args) {
 		Double PrincipalBal,Rate,Time, CompoundInterst, n=1.0;
 		Scanner input= new Scanner(System.in);
