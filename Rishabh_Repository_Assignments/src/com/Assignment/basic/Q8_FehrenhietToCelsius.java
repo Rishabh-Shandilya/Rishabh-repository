@@ -6,8 +6,9 @@ public class Q8_FehrenhietToCelsius {
 	 public static void main(String[] args) {
 	        Double temp;
 	        System.out.println("Enter the temprature in Fahrenheit");
-	        Scanner input= new Scanner(System.in);
-	        temp=input.nextDouble();
+	        try (Scanner input = new Scanner(System.in)) {
+				temp=input.nextDouble();
+			}
 	        System.out.println("The coversion to celsius is: "+FahrenheitToCelsius(temp));
 	    }//end main
 

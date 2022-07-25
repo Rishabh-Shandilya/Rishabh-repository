@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Q8_VowelOrNot {
 	public static void main(String[] args) {
 		char C;
-		Scanner input= new Scanner(System.in);
-		System.out.println("Enter a character to check whether it is vowel or not");
-		C=input.next().charAt(0);
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.println("Enter a character to check whether it is vowel or not");
+			C=input.next().charAt(0);
+		}
 		switch (C) {
 		case 'a':
 		case 'A':

@@ -6,8 +6,9 @@ public class Q6_DistanceUnit {
 	 public static void main(String[] args) {
 	        int length;
 	        System.out.println("Ener the lenght in centimeter to convert it into mtr and km");
-	        Scanner input= new Scanner(System.in);
-	        length=input.nextInt();
+	        try (Scanner input = new Scanner(System.in)) {
+				length=input.nextInt();
+			}
 	        System.out.println("centimeter into meter is: "+ CovertIntoMeter(length));
 	        System.out.println("centimeter into Kilometer is: "+ CovertIntoKilometer(length));
 

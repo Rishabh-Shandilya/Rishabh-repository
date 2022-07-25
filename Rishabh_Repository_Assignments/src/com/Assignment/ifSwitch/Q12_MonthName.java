@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Q12_MonthName {
 	public static void main(String[] args) {
 		int month;
-		Scanner input= new Scanner(System.in);
-		System.out.println("Enter the month number to know the month name");
-		month=input.nextInt();
-		
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.println("Enter the month number to know the month name");
+			month=input.nextInt();
+		}
 		switch (month) {
 		case 1:
 			System.out.println("The month is January");

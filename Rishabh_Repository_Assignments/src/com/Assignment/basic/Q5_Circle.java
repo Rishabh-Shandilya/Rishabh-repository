@@ -7,9 +7,10 @@ public class Q5_Circle {
 	  static double p= 3.14;
 	    public static void main(String[] args) {
 	        int r;
-	        Scanner input= new Scanner(System.in);
-	        System.out.println("Enter the radius of the circle");
-	        r=input.nextInt();
+	        try (Scanner input = new Scanner(System.in)) {
+				System.out.println("Enter the radius of the circle");
+				r=input.nextInt();
+			}
 	        System.out.println("The diameter of the circle is: " +diameter(r));
 	        System.out.println("The circumference of the circle is: " +circumference(r));
 	        System.out.println("The Area of the circle is: " +area(r));

@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Q2_MaxBtwnThreeNum {
 public static void main(String[] args) {
 	int num1, num2, num3;
-	Scanner input= new Scanner(System.in);
+	try (Scanner input = new Scanner(System.in)) {
 		System.out.println("Enter three numbers to find the maximum between them");
 		num1= input.nextInt();
 		num2=input.nextInt();
 		num3=input.nextInt();
-		
+	}
 		if (num1>num2&&num1>num3) {
 			System.out.println(num1+" is the maximum");
 		}//end if

@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class trial {
 	public static void main(String[] args) {
 		int num;
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a number to check whether it's least " + "significant bit is set or not");
-		num = input.nextInt();
-		
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.println("Enter a number to check whether it's least " + "significant bit is set or not");
+			num = input.nextInt();
+		}
 		if((num&1)==1) {
 			System.out.println("its least significant bit is 1");
 		}

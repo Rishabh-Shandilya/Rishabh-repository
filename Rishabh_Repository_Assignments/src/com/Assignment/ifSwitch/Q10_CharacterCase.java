@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Q10_CharacterCase {
 	public static void main(String[] args) {
 		char ch;
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a character to check whether it is uppercase or lowercase");
-		ch = input.next().charAt(0);
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.println("Enter a character to check whether it is uppercase or lowercase");
+			ch = input.next().charAt(0);
+		}
 		if (ch>='a'&&ch<='z') {
 			System.out.println(ch+" is a lowercase");
 		}//end if

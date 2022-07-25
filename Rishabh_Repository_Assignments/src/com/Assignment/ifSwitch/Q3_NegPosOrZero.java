@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Q3_NegPosOrZero {
 	public static void main(String[] args) {
 		int num;
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter the number to check whether they are positive negative or zero");
-		num= input.nextInt();
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.println("Enter the number to check whether they are positive negative or zero");
+			num= input.nextInt();
+		}
 		if (num>0) {
 			System.out.println("The number is positive");
 		}//end if

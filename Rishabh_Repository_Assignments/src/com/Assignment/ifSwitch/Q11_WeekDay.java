@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Q11_WeekDay {
 	public static void main(String[] args) {
 		int week;
-		Scanner input=new Scanner(System.in);
-		System.out.println("Enter the week number to know the weekday");
-		week=input.nextInt();
-		
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.println("Enter the week number to know the weekday");
+			week=input.nextInt();
+		}
 		switch (week) {
 		case 1:
 			System.out.println("Today is Monday");

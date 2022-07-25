@@ -9,11 +9,12 @@ public class Q16_TypeOfTriangle {
 		int s1, s2, s3;
 		System.out.println("Enter the sides of triangle to check"
 				+ " whether it is equilatral or isosceles or scalene");
-		Scanner input= new Scanner(System.in);
-		s1=input.nextInt(); 
-		s2=input.nextInt();
-		s3=input.nextInt();
-				if (s1==s2&&s2==s3&&s1==s3) {
+		try (Scanner input = new Scanner(System.in)) {
+			s1=input.nextInt(); 
+			s2=input.nextInt();
+			s3=input.nextInt();
+		}
+		if (s1==s2&&s2==s3&&s1==s3) {
 					System.out.println("The triangle is equilateral");
 				}//end if
 				else if (s1!=s2&&s2!=s3&&s3!=s1) {
