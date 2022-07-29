@@ -1,9 +1,6 @@
 package com.Assignment.ifSwitch;
 
-import java.util.Scanner;
-
-import com.Assignment.Resources.Scan;
-
+import java.util.*;
 public class Q16_TypeOfTriangle {
 	public static void main(String[] args) {
 		int s1, s2, s3;
